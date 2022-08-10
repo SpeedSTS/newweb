@@ -1,12 +1,20 @@
+"use strict"
+let hamburgerMenu;
+let nav;
+let logo;
 
-let hamburgerMenu = document.getElementById("hamburgerMenu");
-let nav = document.querySelector("nav");
+document.addEventListener("DOMContentLoaded", () => {
+    hamburgerMenu = document.getElementById("hamburgerMenu");
+    nav = document.querySelector("nav");
+    logo = document.getElementById("logo");
+    hamburgerMenu.addEventListener("click", () => {
+        if(nav.className.length === 0) {
+            nav.className += "responsive"
+        } else {
+            nav.className = "";
+        }
+    })
 
-hamburgerMenu.addEventListener("click", () => {
-    if(nav.style.display === "none") {
-        nav.style.display = "block"
-    } else {
-        nav.style.display = "none"
-
-    }
 })
+
+
