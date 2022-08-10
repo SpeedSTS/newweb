@@ -36,26 +36,45 @@
   <main>
     <div class="gridLayoutTest">
       <div class="form" id="form">
-        Tutaj będzie formularz
+        <form class="addProduct" id="productForm">
+          <label for="productName" class="productName">Nazwa produktu:</label>
+          <input type="text" id="productName">
+          <label for="productName" class="productName">Kalorie:</label>
+          <input type="number" id="productCalories">
+          <label for="productName" class="productName">Białko:</label>
+          <input type="number" id="productProtein">
+          <label for="productName" class="productName">Tłuszcze:</label>
+          <input type="number" id="productFat">
+          <label for="productName" class="productName">Weglowodany:</label>
+          <input type="number" id="productCarbo">
+          <label for="productName" class="productName">Cena za opakowanie:</label>
+          <input type="number" id="productPrice">
+          <button type="submit" class="productButton">Dodaj</button>
+
+        </form>
       </div>
       <div class="productList" id="productList">
-        <table class="productListTable" id="productListTable">
-          <tr>
-            <th>Nazwa produktu</th>
-            <th>Kalorie</th>
-            <th>Białko</th>
-            <th>Tłuszcze</th>
-            <th>Węglowodany</th>
-            <th>Cena za opakowanie</th>
+        <table class="productListTable">
+          <thead>
+           <tr>
+             <th>Nazwa produktu</th>
+             <th>Kalorie</th>
+             <th>Białko</th>
+             <th>Tłuszcze</th>
+             <th>Węglowodany</th>
+              <th>Cena za opakowanie</th>
           </tr>
+          </thead>  
+          <tbody id="productListTable">
           <tr>
-            <td>Chudy Twaróg</td>
-            <td>86</td>
-            <td>17</td>
-            <td>0</td>
-            <td>20</td>
-            <td>2,99</td>
+             <td>Chudy Twaróg</td>
+              <td>86</td>
+              <td>17</td>
+              <td>0</td>
+              <td>20</td>
+              <td>2,99</td>
           </tr>
+          </tbody>
         </table>
       </div>
     </div>
@@ -64,5 +83,6 @@
 
   </footer>
   <script src="calories.js"></script>
+  <script src="addProduct.js"></script>
 </body>
 </html>

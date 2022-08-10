@@ -81,11 +81,19 @@ section {
 }
 .gridLayoutTest {
     display: grid;
-    grid-template-columns: auto auto;
+    grid-template-columns: 1fr 2fr;
     column-gap: 25px;
 }
-.form {
-    border: 1px solid #000;
+.addProduct label, input {
+    width: 100%;
+    padding: 8px;
+    font-weight: 20px;
+}
+.productButton {
+    padding: 10px;
+    border: none;
+    background-color: #66B032;
+    color: #fff;
 }
 .productList {
     overflow-x: auto;
